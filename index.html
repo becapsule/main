@@ -8,12 +8,24 @@
             position: relative; /* Define a posição relativa para o body */
         }
 
-        .imagem-1, .imagem-2, .imagem-3 {
+        .imagem-1{
+            position: absolute; /* Define a posição absoluta para as imagens */
+            top: 0; /* Alinha as imagens no topo */
+            left: 0; /* Alinha as imagens à esquerda */
+            margin: 0;
+            padding: 0;
+            background-image: url('caminho-da-imagem-de-fundo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .imagem-2, .imagem-3 {
             position: absolute; /* Define a posição absoluta para as imagens */
             top: 0; /* Alinha as imagens no topo */
             left: 0; /* Alinha as imagens à esquerda */
         }
-
+        
         .imagem-2 {
             z-index: 1; /* Coloca a imagem-2 acima da imagem-1 */
             width: 50px; /* Define a largura da imagem-2 */
