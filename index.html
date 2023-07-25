@@ -8,7 +8,7 @@
             position: relative; /* Define a posição relativa para o body */
         }
 
-        .imagem-1, .imagem-2 {
+        .imagem-1, .imagem-2, .imagem-3 {
             position: absolute; /* Define a posição absoluta para as imagens */
             top: 0; /* Alinha as imagens no topo */
             left: 0; /* Alinha as imagens à esquerda */
@@ -20,10 +20,16 @@
             height: auto; /* Mantém a proporção original da imagem-2 */
             left: 50%; /* Centraliza horizontalmente a imagem-2 */
             transform: translateX(-50%); /* Centraliza horizontalmente a imagem-2 */
-            Down: 75%; /* Centraliza horizontalmente a imagem-2 */
-            transform: translateX(-75%); /* Centraliza horizontalmente a imagem-2 */
-        }
+            bottom: 0; /* Coloca a imagem no final da página */
 
+        .imagem-3 {
+            z-index: 1; /* Coloca a imagem-2 acima da imagem-1 */
+            width: 50px; /* Define a largura da imagem-2 */
+            height: auto; /* Mantém a proporção original da imagem-2 */
+            left: 50%; /* Centraliza horizontalmente a imagem-2 */
+            transform: translateX(-50%); /* Centraliza horizontalmente a imagem-2 */
+            bottom: 0; /* Coloca a imagem no final da página */
+                        
         img {
             max-width: 100%; /* Ajusta as imagens à largura do elemento pai */
             height: auto; /* Mantém a proporção original das imagens */
@@ -34,9 +40,12 @@
     <h1>Em Construção</h1>
     <p>Estamos trabalhando nesta página. Volte em breve!</p>
     <div class="imagem-1">
-        <img src="construction.png" alt="Imagem 1">
+        <img src="fundo.png" alt="Imagem 1">
     </div>
     <div class="imagem-2">
+        <img src="capsule.png" alt="Imagem 2">
+    </div>
+    <div class="imagem-3">
         <img src="loading.gif" alt="Imagem 2">
     </div>
 </body>
